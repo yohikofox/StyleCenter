@@ -1,0 +1,46 @@
+{
+  "name": "awesome-bootstrap-checkbox",
+  "version": "0.3.7",
+  "description": "Font Awesome Bootstrap Checkboxes & Radios. Pure css way to make inputs look prettier.",
+  "main": "awesome-bootstrap-checkbox.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flatlogic/awesome-bootstrap-checkbox.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "font-awesome",
+    "scss",
+    "less"
+  ],
+  "author": "contact@flatlogic.com (http://flatlogic.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flatlogic/awesome-bootstrap-checkbox/issues"
+  },
+  "homepage": "https://github.com/flatlogic/awesome-bootstrap-checkbox",
+  "files": [
+    "demo",
+    "awesome-bootstrap-checkbox.css",
+    "awesome-bootstrap-checkbox.scss",
+    "awesome-bootstrap-checkbox.less",
+    "bower.json",
+    "gulpfile.js"
+  ],
+  "devDependencies": {
+    "devbridge-styleguide": "^0.4.6",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^2.0.6",
+    "gulp-debug": "^2.1.2",
+    "gulp-filter": "^4.0.0",
+    "gulp-inline-fonts": "^1.0.1",
+    "gulp-merge": "^0.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^2.0.0-alpha"
+  }
+}

@@ -1,0 +1,15 @@
+/// Create the same keyframes twice (for retrigger in pure CSS)
+/// @author Yoann Lorho
+/// @param  {Keyword} $name - name of the animation (will be suffixed with --1 and --2)
+@mixin double-keyframes($name) {
+  // write the keyframe rules to the document root  
+  // @at-root {
+  // write the same keyframes twice
+  @for $i from 1 through 2 {
+    $keyframe-name: unquote($name + "--" + $i);
+    @keyframes #{$keyframe-name} {
+      @content;
+    }
+  }
+  // }
+}

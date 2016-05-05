@@ -1,0 +1,12 @@
+@mixin checkbox-variant($parent, $color) {
+  #{$parent} input[type="checkbox"]:checked + label,
+  #{$parent} input[type="radio"]:checked + label {
+    &::before {
+      background-color: $color;
+      border-color: $color;
+    }
+    &::after{
+      color: $font-default-white;
+    }
+  }
+}
