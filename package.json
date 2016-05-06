@@ -31,7 +31,6 @@
     "gulpfile.js"
   ],
   "devDependencies": {
-    "devbridge-styleguide": "^0.4.6",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
     "gulp-clean-css": "^2.0.6",
@@ -41,6 +40,11 @@
     "gulp-merge": "^0.1.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.1",
-    "gulp-sourcemaps": "^2.0.0-alpha"
+    "gulp-sourcemaps": "^2.0.0-alpha",
+    "sprity": "^1.0.8"
+  },
+  "dependencies": {
+    "sprity": "^1.0.8",
+    "sprity-sass": "^1.0.4"
   }
 }
