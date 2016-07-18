@@ -10,7 +10,7 @@ var filter = require('gulp-filter');
 var debug = require('gulp-debug');
 var clean = require('gulp-clean');
 var gulpIf = require('gulp-if');
-var sprity = require('sprity');
+var sprite = require('gulp.spritesmith');
 
 var noPartials = function (file) {
     var path = require('path');
@@ -70,10 +70,14 @@ gulp.task('start-styleguide', function () {
 });
 
 
-gulp.task('sprites', function () {
-    return sprity.src({
-        src: './src/images/**/*.{png,jpg}',
-        style:'dist/sprite.scss',
-        processor:'sass'
-    }).pipe(gulpIf('*.png', gulp.dest('dist/img/'), gulp.dest('dist/css/')));
+gulp.task('sprite', function () {
+    var spriteData =
+        gulp.src('lib/assets/images/sprite/*.*') // source path of the sprite images
+            .pipe(spritesmith({
+                imgName: 'sprite.png',
+                cssName: 'sprite.css',
+            }));
+
+    spriteData.img.pipe(gulp.dest('dist/sprites/')); // output path for the sprite
+    spriteData.css.pipe(gulp.dest('dist/')); // output path for the CSS
 });
